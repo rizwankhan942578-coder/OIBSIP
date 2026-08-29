@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Convert temperatures quickly and accurately between Celsius, Fahrenheit, and Kelvin with real-time validation.">
+  <title>Temperature Converter</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Ambient background elements -->
+  <div class="ambient-glow glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow glow-2" aria-hidden="true"></div>
+
+  <main class="app-container">
+    <div class="converter-card">
+      
+      <!-- Header Section -->
+      <header class="card-header">
+        <div class="header-icon-box">
+          <svg class="header-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"/>
+          </svg>
+        </div>
+        <h1 class="card-title">Temperature Converter</h1>
+        <p class="card-subtitle">Convert temperatures quickly and accurately</p>
+      </header>
+
+      <!-- Converter Form -->
+      <form id="converter-form" class="converter-form" novalidate>
+        <div class="input-grid">
+          
+          <!-- Temperature Input Field -->
+          <div class="form-group">
+            <label for="temp-input" class="form-label">Enter Temperature</label>
+            <div class="input-wrapper">
+              <input 
+                type="number" 
+                id="temp-input" 
+                name="tempInput"
+                class="form-input" 
+                placeholder="Enter temperature" 
+                step="any"
+                aria-describedby="error-message"
+                aria-invalid="false"
+                required
+              >
+              <span class="input-unit-badge" id="input-unit-badge">°C</span>
+            </div>
+          </div>
+
+          <!-- Unit Selector Dropdown -->
+          <div class="form-group">
+            <label for="unit-select" class="form-label">Convert From</label>
+            <div class="select-wrapper">
+              <select id="unit-select" name="unitSelect" class="form-select">
+                <option value="celsius" selected>Celsius (°C)</option>
+                <option value="fahrenheit">Fahrenheit (°F)</option>
+                <option value="kelvin">Kelvin (K)</option>
+              </select>
+              <div class="select-arrow" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Real-Time Error Message Display -->
+        <div id="error-message" class="error-container hidden" role="alert" aria-live="assertive">
+          <svg class="error-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="12" y1="8" x2="12" y2="12"/>
+            <line x1="12" y1="16" x2="12.01" y2="16"/>
+          </svg>
+          <span id="error-text" class="error-text">Please enter a temperature.</span>
+        </div>
+
+        <!-- Form Buttons -->
+        <div class="button-group">
+          <button type="submit" id="convert-btn" class="btn btn-primary">
+            <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21.5 2v6h-6"/>
+              <path d="M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/>
+            </svg>
+            <span>Convert Temperature</span>
+          </button>
+          
+          <button type="button" id="clear-btn" class="btn btn-secondary">
+            <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 6h18"/>
+              <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/>
+              <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/>
+            </svg>
+            <span>Clear</span>
+          </button>
+        </div>
+      </form>
+
+      <!-- Conversion Results Section -->
+      <section class="results-section" aria-live="polite">
+        <h2 class="results-title">Conversion Results</h2>
+        <div class="results-grid" id="results-grid">
+          
+          <!-- Celsius Card -->
+          <div class="result-card" id="card-celsius" data-unit="celsius">
+            <div class="result-header">
+              <span class="unit-name">Celsius</span>
+              <span class="unit-badge celsius-badge">°C</span>
+            </div>
+            <div class="result-value-container">
+              <span class="result-value" id="celsius-result">--</span>
+              <span class="result-symbol">°C</span>
+            </div>
+          </div>
+
+          <!-- Fahrenheit Card -->
+          <div class="result-card" id="card-fahrenheit" data-unit="fahrenheit">
+            <div class="result-header">
+              <span class="unit-name">Fahrenheit</span>
+              <span class="unit-badge fahrenheit-badge">°F</span>
+            </div>
+            <div class="result-value-container">
+              <span class="result-value" id="fahrenheit-result">--</span>
+              <span class="result-symbol">°F</span>
+            </div>
+          </div>
+
+          <!-- Kelvin Card -->
+          <div class="result-card" id="card-kelvin" data-unit="kelvin">
+            <div class="result-header">
+              <span class="unit-name">Kelvin</span>
+              <span class="unit-badge kelvin-badge">K</span>
+            </div>
+            <div class="result-value-container">
+              <span class="result-value" id="kelvin-result">--</span>
+              <span class="result-symbol">K</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

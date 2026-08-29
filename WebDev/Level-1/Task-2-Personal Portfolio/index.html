@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rizwan Khan | Full Stack Developer Portfolio</title>
+    <meta name="description"
+        content="Portfolio of Rizwan Khan, Full Stack Developer & B.Sc Computer Science graduate specializing in HTML, CSS, JavaScript, React, Node.js, Express.js, MongoDB, and MySQL.">
+    <meta name="keywords"
+        content="Rizwan Khan, Full Stack Developer, Web Developer Portfolio, React Developer, Node.js Developer, Computer Science Graduate">
+    <meta name="author" content="Rizwan Khan">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome 6 Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Background Animated Mesh Glow -->
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+    <div class="bg-glow bg-glow-3"></div>
+
+    <!-- Navigation Bar -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-bracket">&lt;</span><span class="logo-name">Rizwan Khan</span> <span
+                    class="logo-tag">/&gt;</span>
+            </a>
+
+            <nav class="nav-links" id="nav-links">
+                <a href="#home" class="nav-link active"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="#about" class="nav-link"><i class="fa-solid fa-user"></i> About</a>
+                <a href="#skills" class="nav-link"><i class="fa-solid fa-code"></i> Skills</a>
+                <a href="#projects" class="nav-link"><i class="fa-solid fa-folder-open"></i> Projects</a>
+                <a href="#contact" class="nav-link"><i class="fa-solid fa-paper-plane"></i> Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme" title="Toggle Light/Dark Mode">
+                    <i class="fa-solid fa-moon moon-icon"></i>
+                    <i class="fa-solid fa-sun sun-icon"></i>
+                </button>
+                <a href="#contact" class="btn btn-sm btn-primary nav-cta">Let's Talk</a>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Open Navigation Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero / Profile Section -->
+        <section class="hero-section" id="home">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="badge hero-badge">
+                        <span class="pulse-dot"></span> Open for Full-Stack Opportunities
+                    </div>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Rizwan Khan</span>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        I build responsive & modern web apps as a <span class="typing-text"
+                            id="typing-text"></span><span class="cursor">&nbsp;</span>
+                    </h2>
+                    <p class="hero-description">
+                        B.Sc Computer Science graduate with a strong passion for full stack web development, responsive
+                        design, and crafting performant user experiences.
+                    </p>
+
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary btn-lg">
+                            <i class="fa-solid fa-briefcase"></i> View Projects
+                        </a>
+                        <a href="#contact" class="btn btn-outline btn-lg">
+                            <i class="fa-solid fa-envelope"></i> Contact Me
+                        </a>
+                    </div>
+
+                    <div class="social-links-bar">
+                        <span class="social-label">Connect with me:</span>
+                        <div class="social-icons">
+                            <a href="https://github.com/rizwankhan942578-coder" target="_blank"
+                                rel="noopener noreferrer" class="social-icon" aria-label="GitHub Profile"
+                                title="GitHub Profile">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/rizwan-khan-080607415/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BN8PqRMGTROiavwQZ1LWMqA%3D%3D"
+                                target="_blank" rel="noopener noreferrer" class="social-icon"
+                                aria-label="LinkedIn Profile" title="LinkedIn Profile">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                            <a href="mailto:rizwankhan05971@gmail.com" class="social-icon" aria-label="Email Me"
+                                title="Email: rizwankhan05971@gmail.com">
+                                <i class="fa-solid fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-image-wrapper">
+                    <div class="image-frame">
+                        <div class="glowing-border"></div>
+                        <img src="assets/profile.jpg" alt="Rizwan Khan - Full Stack Developer" class="profile-img">
+                        <div class="floating-tech-badge badge-1">
+                            <i class="fa-brands fa-react react-color"></i> React.js
+                        </div>
+                        <div class="floating-tech-badge badge-2">
+                            <i class="fa-brands fa-node-js node-color"></i> Node.js
+                        </div>
+                        <div class="floating-tech-badge badge-3">
+                            <i class="fa-solid fa-database db-color"></i> MongoDB / MySQL
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section class="about-section section-padding" id="about">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag"><i class="fa-solid fa-user-gear"></i> Getting To Know Me</span>
+                    <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-card glass-card">
+                        <div class="about-icon">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <h3>B.Sc Computer Science</h3>
+                        <p>
+                            Graduated with a solid foundation in computer science principles, algorithms, database
+                            management, and software engineering methodologies.
+                        </p>
+                    </div>
+
+                    <div class="about-card glass-card">
+                        <div class="about-icon">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+                        <h3>Web Development</h3>
+                        <p>
+                            Passionate about building responsive, interactive, and user-centric web applications using
+                            modern JavaScript libraries, Node.js frameworks, and databases.
+                        </p>
+                    </div>
+
+                    <div class="about-card glass-card">
+                        <div class="about-icon">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                        </div>
+                        <h3>Responsive Design</h3>
+                        <p>
+                            Dedicated to designing interfaces that seamlessly adapt to any screen size—from mobile
+                            phones to ultra-wide desktop displays with optimized performance.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="about-details-container glass-card">
+                    <div class="about-bio">
+                        <h3>Passionate Developer & Continuous Learner</h3>
+                        <p>
+                            Hello! I'm <strong>Rizwan Khan</strong>, a <strong>B.Sc Computer Science graduate</strong>
+                            with a passion for web development and building responsive web applications. I love taking
+                            complex problems and transforming them into elegant, functional digital solutions.
+                        </p>
+                        <p>
+                            My journey in computer science has equipped me with technical skills across both frontend
+                            and backend technologies—from crafting clean semantic HTML/CSS structures to engineering
+                            backend REST APIs with Node.js, Express.js, MongoDB, and MySQL.
+                        </p>
+
+                        <div class="personal-info-grid">
+                            <div class="info-item">
+                                <span class="info-title"><i class="fa-solid fa-user"></i> Name:</span>
+                                <span class="info-value">Rizwan Khan</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-title"><i class="fa-solid fa-graduation-cap"></i> Degree:</span>
+                                <span class="info-value">B.Sc Computer Science</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-title"><i class="fa-solid fa-envelope"></i> Email:</span>
+                                <span class="info-value">rizwankhan05971@gmail.com</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-title"><i class="fa-solid fa-briefcase"></i> Role:</span>
+                                <span class="info-value">Full Stack Developer</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="stats-counter-grid">
+                        <div class="stat-card">
+                            <span class="stat-number" data-target="10">10+</span>
+                            <span class="stat-label">Projects Built</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number" data-target="9">9+</span>
+                            <span class="stat-label">Core Tech Stack</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number" data-target="100">100%</span>
+                            <span class="stat-label">Responsive Quality</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills-section section-padding" id="skills">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag"><i class="fa-solid fa-layer-group"></i> My Technical Stack</span>
+                    <h2 class="section-title">Skills & <span class="gradient-text">Technologies</span></h2>
+                    <div class="section-line"></div>
+                    <p class="section-desc">Technologies and tools I work with to bring web applications to life.</p>
+                </div>
+
+                <div class="skills-categories">
+                    <div class="category-card glass-card">
+                        <div class="category-header">
+                            <i class="fa-solid fa-desktop category-icon"></i>
+                            <h3>Frontend Development</h3>
+                        </div>
+                        <div class="skills-grid">
+                            <div class="skill-pill">
+                                <i class="fa-brands fa-html5 skill-icon html-icon"></i>
+                                <span class="skill-name">HTML5</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-pill">
+                                <i class="fa-brands fa-css3-alt skill-icon css-icon"></i>
+                                <span class="skill-name">CSS3</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-pill">
+                                <i class="fa-brands fa-js skill-icon js-icon"></i>
+                                <span class="skill-name">JavaScript (ES6+)</span>
+                                <span class="skill-level">Proficient</span>
+                            </div>
+                            <div class="skill-pill">
+                                <i class="fa-brands fa-react skill-icon react-icon"></i>
+                                <span class="skill-name">React</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="category-card glass-card">
+                        <div class="category-header">
+                            <i class="fa-solid fa-server category-icon"></i>
+                            <h3>Backend & Databases</h3>
+                        </div>
+                        <div class="skills-grid">
+                            <div class="skill-pill">
+                                <i class="fa-brands fa-node-js skill-icon node-icon"></i>
+                                <span class="skill-name">Node.js</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <div class="skill-pill">
+                                <i class="fa-solid fa-network-wired skill-icon express-icon"></i>
+                                <span class="skill-name">Express.js</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <div class="skill-pill">
+                                <i class="fa-solid fa-leaf skill-icon mongo-icon"></i>
+                                <span class="skill-name">MongoDB</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <div class="skill-pill">
+                                <i class="fa-solid fa-database skill-icon mysql-icon"></i>
+                                <span class="skill-name">MySQL</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="category-card glass-card">
+                        <div class="category-header">
+                            <i class="fa-solid fa-wrench category-icon"></i>
+                            <h3>Tools & Workflows</h3>
+                        </div>
+                        <div class="skills-grid">
+                            <div class="skill-pill">
+                                <i class="fa-brands fa-git-alt skill-icon git-icon"></i>
+                                <span class="skill-name">Git</span>
+                                <span class="skill-level">Proficient</span>
+                            </div>
+                            <div class="skill-pill">
+                                <i class="fa-brands fa-github skill-icon github-icon"></i>
+                                <span class="skill-name">GitHub</span>
+                                <span class="skill-level">Proficient</span>
+                            </div>
+                            <div class="skill-pill">
+                                <i class="fa-solid fa-code skill-icon vscode-icon"></i>
+                                <span class="skill-name">VS Code</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-pill">
+                                <i class="fa-solid fa-sliders skill-icon rest-icon"></i>
+                                <span class="skill-name">RESTful APIs</span>
+                                <span class="skill-level">Proficient</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Technical Skills Checklist Required Bar -->
+                <div class="skills-checklist-banner glass-card text-center">
+                    <h4><i class="fa-solid fa-circle-check gradient-text"></i> Core Checklist Competencies:</h4>
+                    <div class="checklist-tags">
+                        <span class="tag"><i class="fa-brands fa-html5"></i> HTML</span>
+                        <span class="tag"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+                        <span class="tag"><i class="fa-brands fa-js"></i> JavaScript</span>
+                        <span class="tag"><i class="fa-brands fa-react"></i> React</span>
+                        <span class="tag"><i class="fa-brands fa-node-js"></i> Node.js</span>
+                        <span class="tag"><i class="fa-solid fa-server"></i> Express.js</span>
+                        <span class="tag"><i class="fa-solid fa-leaf"></i> MongoDB</span>
+                        <span class="tag"><i class="fa-solid fa-database"></i> MySQL</span>
+                        <span class="tag"><i class="fa-brands fa-github"></i> Git/GitHub</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects-section section-padding" id="projects">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag"><i class="fa-solid fa-folder-special"></i> Featured Work</span>
+                    <h2 class="section-title">My <span class="gradient-text">Projects</span></h2>
+                    <div class="section-line"></div>
+                    <p class="section-desc">A selection of web development projects showcasing frontend and backend
+                        solutions.</p>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1: Snake Game (Required Feature Checklist Item) -->
+                    <div class="project-card glass-card">
+                        <div class="project-banner snake-bg">
+                            <div class="project-overlay">
+                                <a href="https://github.com/rizwankhan942578-coder/Snake-Game" target="_blank"
+                                    rel="noopener noreferrer" class="btn btn-circle" title="View Source Code on GitHub">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                            <div class="project-badge">Featured Game</div>
+                            <div class="project-graphic">
+                                <i class="fa-solid fa-gamepad game-graphic-icon"></i>
+                                <span class="graphic-title">SNAKE GAME</span>
+                            </div>
+                        </div>
+
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3>Snake Game</h3>
+                                <div class="project-links">
+                                    <a href="https://github.com/rizwankhan942578-coder/Snake-Game" target="_blank"
+                                        rel="noopener noreferrer" title="GitHub Repository">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <p class="project-description">
+                                A classic Snake Game built using HTML, CSS, and JavaScript. It includes player controls,
+                                score tracking, food generation, and game-over functionality.
+                            </p>
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>Game Logic</span>
+                            </div>
+                            <div class="project-footer">
+                                <a href="https://github.com/rizwankhan942578-coder/Snake-Game" target="_blank"
+                                    rel="noopener noreferrer" class="project-link-btn">
+                                    <span>rizwankhan942578-coder/Snake-Game</span>
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: ShopSphere E-Commerce -->
+                    <div class="project-card glass-card">
+                        <div class="project-banner ecommerce-bg">
+                            <div class="project-overlay">
+                                <a href="https://github.com/rizwankhan942578-coder/ShopSphere-Ecommerce" target="_blank"
+                                    rel="noopener noreferrer" class="btn btn-circle" title="View Source Code on GitHub">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                            <div class="project-badge">Full Stack App</div>
+                            <div class="project-graphic">
+                                <i class="fa-solid fa-cart-shopping game-graphic-icon"></i>
+                                <span class="graphic-title">SHOPSPHERE</span>
+                            </div>
+                        </div>
+
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3>ShopSphere E-Commerce</h3>
+                                <div class="project-links">
+                                    <a href="https://github.com/rizwankhan942578-coder/ShopSphere-Ecommerce"
+                                        target="_blank" rel="noopener noreferrer" title="GitHub Repository">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <p class="project-description">
+                                MERN stack e-commerce web application supporting product catalog browsing, cart
+                                management, user authentication, and Cash on Delivery (COD) payment integration.
+                            </p>
+                            <div class="project-tags">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>Express</span>
+                                <span>MongoDB</span>
+                            </div>
+                            <div class="project-footer">
+                                <a href="https://github.com/rizwankhan942578-coder/ShopSphere-Ecommerce" target="_blank"
+                                    rel="noopener noreferrer" class="project-link-btn">
+                                    <span>rizwankhan942578-coder/ShopSphere-Ecommerce</span>
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Space Defender Arcade Game -->
+                    <div class="project-card glass-card">
+                        <div class="project-banner space-bg">
+                            <div class="project-overlay">
+                                <a href="https://github.com/rizwankhan942578-coder/Space-Defender" target="_blank"
+                                    rel="noopener noreferrer" class="btn btn-circle" title="View Source Code on GitHub">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                            <div class="project-badge">Canvas Game</div>
+                            <div class="project-graphic">
+                                <i class="fa-solid fa-rocket game-graphic-icon"></i>
+                                <span class="graphic-title">SPACE DEFENDER</span>
+                            </div>
+                        </div>
+
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3>Space Defender</h3>
+                                <div class="project-links">
+                                    <a href="https://github.com/rizwankhan942578-coder/Space-Defender" target="_blank"
+                                        rel="noopener noreferrer" title="GitHub Repository">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <p class="project-description">
+                                Action-packed 2D arcade shooter built using JavaScript HTML5 Canvas. Features animated
+                                laser effects, enemy wave generation, score tracking, power-ups, and audio effects.
+                            </p>
+                            <div class="project-tags">
+                                <span>JavaScript</span>
+                                <span>HTML5 Canvas</span>
+                                <span>CSS3</span>
+                                <span>OOP</span>
+                            </div>
+                            <div class="project-footer">
+                                <a href="https://github.com/rizwankhan942578-coder/Space-Defender" target="_blank"
+                                    rel="noopener noreferrer" class="project-link-btn">
+                                    <span>rizwankhan942578-coder/Space-Defender</span>
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section section-padding" id="contact">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag"><i class="fa-solid fa-paper-plane"></i> Get In Touch</span>
+                    <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+                    <div class="section-line"></div>
+                    <p class="section-desc">Feel free to reach out for project inquiries, employment opportunities, or
+                        tech discussions!</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info-column">
+                        <div class="contact-card glass-card">
+                            <div class="contact-icon">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="contact-detail">
+                                <h4>Email Address</h4>
+                                <a href="mailto:rizwankhan05971@gmail.com"
+                                    class="contact-link">rizwankhan05971@gmail.com</a>
+                                <button class="copy-btn" id="copy-email-btn" title="Copy Email Address">
+                                    <i class="fa-regular fa-copy"></i> Copy
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="contact-card glass-card">
+                            <div class="contact-icon">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </div>
+                            <div class="contact-detail">
+                                <h4>LinkedIn Profile</h4>
+                                <a href="https://www.linkedin.com/in/rizwan-khan-080607415/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BN8PqRMGTROiavwQZ1LWMqA%3D%3D"
+                                    target="_blank" rel="noopener noreferrer" class="contact-link">
+                                    linkedin.com/in/rizwan-khan
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="contact-card glass-card">
+                            <div class="contact-icon">
+                                <i class="fa-brands fa-github"></i>
+                            </div>
+                            <div class="contact-detail">
+                                <h4>GitHub Profile</h4>
+                                <a href="https://github.com/rizwankhan942578-coder" target="_blank"
+                                    rel="noopener noreferrer" class="contact-link">
+                                    github.com/rizwankhan942578-coder
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="contact-card glass-card">
+                            <div class="contact-icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="contact-detail">
+                                <h4>Location & Status</h4>
+                                <p class="contact-text">India &bull; Available for Remote & On-Site Roles</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-column glass-card">
+                        <h3>Send Me a Message</h3>
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <div class="input-wrapper">
+                                    <i class="fa-regular fa-user input-icon"></i>
+                                    <input type="text" id="name" name="name" placeholder="John Doe" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <div class="input-wrapper">
+                                    <i class="fa-regular fa-envelope input-icon"></i>
+                                    <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <div class="input-wrapper">
+                                    <i class="fa-solid fa-tag input-icon"></i>
+                                    <input type="text" id="subject" name="subject"
+                                        placeholder="Project Inquiry / Job Opportunity" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <div class="input-wrapper">
+                                    <i class="fa-regular fa-comment-dots input-icon message-icon"></i>
+                                    <textarea id="message" name="message" rows="5"
+                                        placeholder="Hi Rizwan, I would like to discuss..." required></textarea>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block btn-lg" id="submit-btn">
+                                <i class="fa-solid fa-paper-plane"></i> Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#home" class="logo">
+                    <span class="logo-bracket">&lt;</span><span class="logo-name">Rizwan Khan</span> <span
+                        class="logo-tag">/&gt;</span>
+                </a>
+                <p>B.Sc Computer Science Graduate & Full Stack Web Developer.</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Rizwan Khan. All rights reserved.</p>
+                <a href="#home" class="scroll-top-btn" title="Back to Top" aria-label="Back to Top">
+                    <i class="fa-solid fa-arrow-up"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification Popup -->
+    <div class="toast-notification" id="toast">
+        <i class="fa-solid fa-circle-check toast-icon"></i>
+        <span id="toast-message">Message sent successfully!</span>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>

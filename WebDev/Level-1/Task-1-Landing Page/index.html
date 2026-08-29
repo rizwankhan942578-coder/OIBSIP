@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEXUS AI — Next-Gen Creative AI Platform</title>
+  <meta name="description"
+    content="NEXUS AI empowers creators and teams to transform ideas into visual, 3D, and audio reality with real-time neural processing.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Background Glowing Orbs -->
+  <div class="glow-orb orb-1"></div>
+  <div class="glow-orb orb-2"></div>
+  <div class="glow-orb orb-3"></div>
+
+  <!-- Header / Navigation Bar -->
+  <header class="navbar-header">
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <span class="logo-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="url(#logo-grad-1)" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path d="M2 17L12 22L22 17" stroke="url(#logo-grad-2)" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path d="M2 12L12 17L22 12" stroke="url(#logo-grad-3)" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <defs>
+              <linearGradient id="logo-grad-1" x1="2" y1="2" x2="22" y2="12" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#818cf8" />
+                <stop offset="1" stop-color="#c084fc" />
+              </linearGradient>
+              <linearGradient id="logo-grad-2" x1="2" y1="17" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#c084fc" />
+                <stop offset="1" stop-color="#38bdf8" />
+              </linearGradient>
+              <linearGradient id="logo-grad-3" x1="2" y1="12" x2="22" y2="17" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#818cf8" />
+                <stop offset="1" stop-color="#38bdf8" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </span>
+        <span class="logo-text">NEXUS<span class="logo-accent">.AI</span></span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#about" class="nav-link">Workflow</a>
+        <a href="#testimonials" class="nav-link">Testimonials</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#pricing" class="btn btn-secondary nav-btn-login">Sign In</a>
+        <a href="#pricing" class="btn btn-primary nav-btn-cta">Get Started Free</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+
+        <!-- Hero Announcement Pill -->
+        <a href="#features" class="hero-pill">
+          <span class="pill-badge">NEW</span>
+          <span class="pill-text">Nexus 2.0 Engine Released — 10x Faster Neural Rendering</span>
+          <span class="pill-arrow">→</span>
+        </a>
+
+        <!-- Main Headline -->
+        <h1 class="hero-title">
+          Empower Your Creative Vision With <span class="text-gradient">Neural Intelligence</span>
+        </h1>
+
+        <!-- Hero Subheadline -->
+        <p class="hero-subtitle">
+          Transform complex visual ideas, 3D scenes, and interactive assets into production-ready artwork in seconds
+          using our next-generation generative AI suite.
+        </p>
+
+        <!-- CTA Action Buttons -->
+        <div class="hero-actions">
+          <a href="#pricing" class="btn btn-primary btn-large">
+            <span>Start Free Trial</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+          <a href="#about" class="btn btn-glass btn-large">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10" />
+              <polygon points="10 8 16 12 10 16 10 8" />
+            </svg>
+            <span>Watch Demo</span>
+          </a>
+        </div>
+
+        <!-- Trust Badges -->
+        <div class="hero-trust">
+          <div class="trust-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5">
+              <polyline points="20 6 9 17 4 12" />
+            </svg>
+            <span>No credit card required</span>
+          </div>
+          <div class="trust-divider">•</div>
+          <div class="trust-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5">
+              <polyline points="20 6 9 17 4 12" />
+            </svg>
+            <span>14-day full trial</span>
+          </div>
+          <div class="trust-divider">•</div>
+          <div class="trust-item">
+            <span class="stars">★★★★★</span>
+            <span>4.9/5 (2,400+ reviews)</span>
+          </div>
+        </div>
+
+        <!-- Hero Showcase Card & Mockup -->
+        <div class="hero-mockup-wrapper">
+          <div class="mockup-frame">
+            <div class="mockup-bar">
+              <div class="dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <div class="mockup-url">nexus.ai/studio/workspace</div>
+            </div>
+            <div class="mockup-image-container">
+              <img src="assets/hero-dashboard.png" alt="Nexus AI Creative Workspace Dashboard" class="mockup-img">
+
+              <!-- Floating Overlay Badge 1 -->
+              <div class="floating-badge badge-top-left">
+                <div class="badge-icon icon-cyan">⚡</div>
+                <div class="badge-content">
+                  <div class="badge-title">Render Speed</div>
+                  <div class="badge-value">0.42s per frame</div>
+                </div>
+              </div>
+
+              <!-- Floating Overlay Badge 2 -->
+              <div class="floating-badge badge-bottom-right">
+                <div class="badge-icon icon-purple">✨</div>
+                <div class="badge-content">
+                  <div class="badge-title">Neural Model</div>
+                  <div class="badge-value">Nexus-v2.4 Active</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Social Proof / Client Brands Section -->
+    <section class="clients-section">
+      <div class="container">
+        <p class="clients-title">TRUSTED BY INNOVATORS AT WORLD-CLASS STUDIOS</p>
+        <div class="clients-grid">
+          <div class="client-brand"><span class="brand-symbol">◆</span> SYNTHETIX</div>
+          <div class="client-brand"><span class="brand-symbol">▲</span> QUANTUM LABS</div>
+          <div class="client-brand"><span class="brand-symbol">◈</span> APEX MEDIA</div>
+          <div class="client-brand"><span class="brand-symbol">❖</span> HYPERION</div>
+          <div class="client-brand"><span class="brand-symbol">⬢</span> NEXUS CORE</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section" id="features">
+      <div class="container">
+        <div class="section-header center">
+          <span class="section-tag">CAPABILITIES</span>
+          <h2 class="section-title">Built for Unmatched Speed & Expressive Control</h2>
+          <p class="section-subtitle">Everything you need to conceptualize, iterate, and deploy hyper-detailed creative
+            assets without friction.</p>
+        </div>
+
+        <div class="features-grid">
+          <!-- Feature Card 1 -->
+          <div class="feature-card">
+            <div class="feature-icon-box icon-purple">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+              </svg>
+            </div>
+            <h3 class="feature-title">Real-Time Neural Engine</h3>
+            <p class="feature-desc">Experience zero latency feedback loops. Generate high-resolution 4K visuals as fast
+              as you type your prompt ideas.</p>
+          </div>
+
+          <!-- Feature Card 2 -->
+          <div class="feature-card">
+            <div class="feature-icon-box icon-cyan">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                <circle cx="8.5" cy="8.5" r="1.5" />
+                <polyline points="21 15 16 10 5 21" />
+              </svg>
+            </div>
+            <h3 class="feature-title">Infinite Multi-Modal Canvas</h3>
+            <p class="feature-desc">Seamlessly combine text, reference images, 3D meshes, and vector paths in one
+              unified spatial environment.</p>
+          </div>
+
+          <!-- Feature Card 3 -->
+          <div class="feature-card">
+            <div class="feature-icon-box icon-blue">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 2 7 12 12 22 7 12 2" />
+                <polyline points="2 17 12 22 22 17" />
+                <polyline points="2 12 12 17 22 12" />
+              </svg>
+            </div>
+            <h3 class="feature-title">Native 3D Asset Export</h3>
+            <p class="feature-desc">Instantly convert 2D generative output into clean OBJ, GLTF, or USDZ 3D models with
+              production pbr textures.</p>
+          </div>
+
+          <!-- Feature Card 4 -->
+          <div class="feature-card">
+            <div class="feature-icon-box icon-pink">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+            </div>
+            <h3 class="feature-title">Real-Time Team Sync</h3>
+            <p class="feature-desc">Collaborate live with your team members in shared infinite rooms with role-based
+              access and instant history versioning.</p>
+          </div>
+
+          <!-- Feature Card 5 -->
+          <div class="feature-card">
+            <div class="feature-icon-box icon-emerald">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="2" y1="12" x2="22" y2="12" />
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+              </svg>
+            </div>
+            <h3 class="feature-title">Global Edge Deployment</h3>
+            <p class="feature-desc">Our distributed GPU nodes across 35 regions guarantee ultra-fast processing speeds
+              no matter where you are located.</p>
+          </div>
+
+          <!-- Feature Card 6 -->
+          <div class="feature-card">
+            <div class="feature-icon-box icon-amber">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+              </svg>
+            </div>
+            <h3 class="feature-title">Bank-Grade Data Privacy</h3>
+            <p class="feature-desc">Your prompts, visual assets, and proprietary datasets remain strictly confidential
+              and are never used to train public models.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Workflow / About Section -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="about-grid">
+
+          <!-- Left Column Content -->
+          <div class="about-content">
+            <span class="section-tag">STREAMLINED WORKFLOW</span>
+            <h2 class="section-title">Designed to Supercharge Modern Studio Workflows</h2>
+            <p class="about-desc">
+              Say goodbye to repetitive manual setups and slow render queues. Nexus bridges the gap between raw
+              imagination and finished digital products through custom neural fine-tuning.
+            </p>
+
+            <ul class="checklist">
+              <li class="check-item">
+                <span class="check-icon">✓</span>
+                <div>
+                  <strong>Custom Model Training:</strong> Upload your brand guidelines to train tailored generative
+                  styles in under 10 minutes.
+                </div>
+              </li>
+              <li class="check-item">
+                <span class="check-icon">✓</span>
+                <div>
+                  <strong>Developer API & SDKs:</strong> Integrate Nexus neural pipelines directly into Figma, Unreal
+                  Engine, or custom web apps.
+                </div>
+              </li>
+              <li class="check-item">
+                <span class="check-icon">✓</span>
+                <div>
+                  <strong>Lossless Asset Pipeline:</strong> Export up to 8K HDR textures, EXR depth maps, and vector
+                  SVGs automatically.
+                </div>
+              </li>
+            </ul>
+
+            <div class="stats-row">
+              <div class="stat-box">
+                <div class="stat-number">99.99%</div>
+                <div class="stat-label">Platform Uptime</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-number">&lt; 35ms</div>
+                <div class="stat-label">Average API Latency</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-number">10M+</div>
+                <div class="stat-label">Assets Rendered</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column Card Showcase -->
+          <div class="about-preview-card">
+            <div class="preview-header">
+              <div class="preview-pill">PIPELINE MONITOR</div>
+              <div class="preview-status"><span class="status-dot"></span> LIVE</div>
+            </div>
+
+            <div class="pipeline-step active">
+              <div class="step-num">01</div>
+              <div class="step-info">
+                <h4>Prompt Parsing & Semantic Mesh Generation</h4>
+                <p>Analyzing geometry topology & light vectors...</p>
+              </div>
+              <div class="step-badge">100%</div>
+            </div>
+
+            <div class="pipeline-step active">
+              <div class="step-num">02</div>
+              <div class="step-info">
+                <h4>Neural Texture Transfer & PBR Shading</h4>
+                <p>Applying specular reflection & roughness maps...</p>
+              </div>
+              <div class="step-badge">100%</div>
+            </div>
+
+            <div class="pipeline-step processing">
+              <div class="step-num">03</div>
+              <div class="step-info">
+                <h4>Ultra High-Res Upscaling & Relighting</h4>
+                <p>Synthesizing 8K details across raytraced passes...</p>
+              </div>
+              <div class="step-badge loader">Processing</div>
+            </div>
+
+            <div class="preview-footer-box">
+              <div class="preview-mini-title">OUTPUT BENCHMARK</div>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill"></div>
+              </div>
+              <div class="benchmark-info">
+                <span>Memory Overhead: 1.2 GB</span>
+                <span>FPS: 120 FPS Smooth</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section" id="testimonials">
+      <div class="container">
+        <div class="section-header center">
+          <span class="section-tag">TESTIMONIALS</span>
+          <h2 class="section-title">Trusted by Leading Artists & Product Teams</h2>
+          <p class="section-subtitle">Discover how digital creators and engineering leads accelerate production with
+            Nexus AI.</p>
+        </div>
+
+        <div class="testimonials-grid">
+
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card">
+            <div class="stars-rating">★★★★★</div>
+            <p class="testimonial-text">
+              "Nexus has completely transformed how our team approaches concept design. What used to take three days of
+              rendering now takes under ten seconds with higher quality."
+            </p>
+            <div class="author-info">
+              <img src="assets/avatar-1.png" alt="Elena Rostova" class="author-avatar">
+              <div>
+                <h4 class="author-name">Elena Rostova</h4>
+                <p class="author-role">Head of Visual Design at Synthetix</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card">
+            <div class="stars-rating">★★★★★</div>
+            <p class="testimonial-text">
+              "The real-time multi-modal canvas is pure magic. Being able to combine vector paths with prompt nodes
+              directly inside our workflow doubled our team's creative output."
+            </p>
+            <div class="author-info">
+              <img src="assets/avatar-2.png" alt="Marcus Vance" class="author-avatar">
+              <div>
+                <h4 class="author-name">Marcus Vance</h4>
+                <p class="author-role">Founder & Director at Vance Studio</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card">
+            <div class="stars-rating">★★★★★</div>
+            <p class="testimonial-text">
+              "Privacy and sub-50ms API latency were dealbreakers for us. Nexus delivered on both fronts flawlessly,
+              allowing us to launch custom AI tools to millions of users."
+            </p>
+            <div class="author-info">
+              <img src="assets/avatar-3.png" alt="Sarah Lin" class="author-avatar">
+              <div>
+                <h4 class="author-name">Sarah Lin</h4>
+                <p class="author-role">Lead AI Architect at Apex Labs</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section" id="pricing">
+      <div class="container">
+        <div class="section-header center">
+          <span class="section-tag">PRICING PLANS</span>
+          <h2 class="section-title">Simple, Transparent Pricing for Everyone</h2>
+          <p class="section-subtitle">Start for free today. Upgrade as your team and asset requirements grow.</p>
+        </div>
+
+        <div class="pricing-grid">
+
+          <!-- Pricing Card 1: Starter -->
+          <div class="pricing-card">
+            <div class="plan-header">
+              <h3 class="plan-name">Starter</h3>
+              <p class="plan-desc">For hobbyists and individual creators exploring AI asset creation.</p>
+            </div>
+            <div class="plan-price">
+              <span class="currency">$</span><span class="amount">0</span><span class="period">/month</span>
+            </div>
+            <ul class="plan-features">
+              <li><span class="icon">✓</span> 500 AI Generation Credits / mo</li>
+              <li><span class="icon">✓</span> Standard 2K Resolution Export</li>
+              <li><span class="icon">✓</span> Community Canvas Access</li>
+              <li><span class="icon">✓</span> Standard Generation Speed</li>
+            </ul>
+            <a href="#hero" class="btn btn-secondary btn-full">Get Started Free</a>
+          </div>
+
+          <!-- Pricing Card 2: Pro (Highlighted) -->
+          <div class="pricing-card plan-featured">
+            <div class="featured-badge">MOST POPULAR</div>
+            <div class="plan-header">
+              <h3 class="plan-name">Pro Creator</h3>
+              <p class="plan-desc">For professional designers, artists, and growing teams.</p>
+            </div>
+            <div class="plan-price">
+              <span class="currency">$</span><span class="amount">29</span><span class="period">/month</span>
+            </div>
+            <ul class="plan-features">
+              <li><span class="icon">✓</span> 10,000 AI Generation Credits / mo</li>
+              <li><span class="icon">✓</span> Ultra 8K & HDR Texture Export</li>
+              <li><span class="icon">✓</span> Real-Time 3D Mesh Extraction</li>
+              <li><span class="icon">✓</span> Priority Turbo Render Queue</li>
+              <li><span class="icon">✓</span> Commercial License Included</li>
+            </ul>
+            <a href="#hero" class="btn btn-primary btn-full">Start 14-Day Free Trial</a>
+          </div>
+
+          <!-- Pricing Card 3: Enterprise -->
+          <div class="pricing-card">
+            <div class="plan-header">
+              <h3 class="plan-name">Enterprise</h3>
+              <p class="plan-desc">For studios requiring custom models, APIs, and dedicated SLAs.</p>
+            </div>
+            <div class="plan-price">
+              <span class="currency">$</span><span class="amount">99</span><span class="period">/month</span>
+            </div>
+            <ul class="plan-features">
+              <li><span class="icon">✓</span> Unlimited Generation Credits</li>
+              <li><span class="icon">✓</span> Custom Model Fine-Tuning</li>
+              <li><span class="icon">✓</span> Unlimited Developer API Rate</li>
+              <li><span class="icon">✓</span> SSO & SOC2 Security Compliance</li>
+              <li><span class="icon">✓</span> Dedicated 24/7 Account Manager</li>
+            </ul>
+            <a href="#hero" class="btn btn-secondary btn-full">Contact Sales</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom CTA Banner Section -->
+    <section class="cta-banner-section">
+      <div class="container">
+        <div class="cta-banner-box">
+          <div class="cta-content">
+            <h2 class="cta-title">Ready to Elevate Your Creative Output?</h2>
+            <p class="cta-subtitle">Join over 100,000 creators using Nexus to build the future of digital art and 3D
+              experiences.</p>
+            <div class="cta-actions">
+              <a href="#pricing" class="btn btn-primary btn-large">Start Free Trial Now</a>
+              <a href="#about" class="btn btn-glass btn-large">Schedule a Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+
+        <div class="footer-brand-col">
+          <a href="#" class="logo">
+            <span class="logo-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="#818cf8" stroke-width="2" />
+                <path d="M2 17L12 22L22 17" stroke="#c084fc" stroke-width="2" />
+                <path d="M2 12L12 17L22 12" stroke="#38bdf8" stroke-width="2" />
+              </svg>
+            </span>
+            <span class="logo-text">NEXUS<span class="logo-accent">.AI</span></span>
+          </a>
+          <p class="footer-desc">
+            The next-generation neural creative suite. Empowering creators, designers, and studios around the globe.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-icon" aria-label="Twitter">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+              </svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+              </svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Discord">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M18 6h0a14.5 14.5 0 0 0-4-1.25A11 11 0 0 0 13 6a14.8 14.8 0 0 0-2 0A11 11 0 0 0 10 4.75 14.5 14.5 0 0 0 6 6 15.6 15.6 0 0 0 3 17.5a14.8 14.8 0 0 0 4.5 2.25 11.2 11.2 0 0 0 1-1.5 9.7 9.7 0 0 1-1.5-.75l.25-.25a10.4 10.4 0 0 0 9.5 0l.25.25a9.7 9.7 0 0 1-1.5.75 11.2 11.2 0 0 0 1 1.5A14.8 14.8 0 0 0 21 17.5 15.6 15.6 0 0 0 18 6zM9.5 14.5c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5zm5 0c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5z" />
+              </svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                <rect x="2" y="9" width="4" height="12" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 class="footer-heading">Product</h4>
+          <ul class="footer-menu">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#about">Workflow Engine</a></li>
+            <li><a href="#pricing">Pricing Plans</a></li>
+            <li><a href="#">SDK & API Docs</a></li>
+            <li><a href="#">Release Notes</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 class="footer-heading">Resources</h4>
+          <ul class="footer-menu">
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">Tutorials & Guides</a></li>
+            <li><a href="#">Community Forum</a></li>
+            <li><a href="#">Showcase Gallery</a></li>
+            <li><a href="#">System Status</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 class="footer-heading">Company</h4>
+          <ul class="footer-menu">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers <span class="hiring-tag">WE'RE HIRING</span></a></li>
+            <li><a href="#">Press Kit</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">© 2026 NEXUS AI Inc. All rights reserved.</p>
+        <div class="status-badge">
+          <span class="status-indicator"></span>
+          <span>All Systems Operational</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
